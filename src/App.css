@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  background: url(./Background.jpg);
+  background-position: center ; 
+  background-repeat: no-repeat;  
+  background-size: cover;
+  opacity: 0.9;
+}
+@media screen and (max-width: 750px){
+  .App{
+    background: url(./Background2.jpg);
+    background-position: center ; 
+    background-size:cover;
+  }
+}

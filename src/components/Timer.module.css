@@ -1,0 +1,90 @@
+.buttons{
+    min-width: 145px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    background: transparent;    
+    color: #03e9f4;    
+    border: solid #03e9f4;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all .2s ;    
+    transition: 0.5s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.50);
+}
+
+.all{
+    background: center rgb(5,5,5,0.9);    
+    backdrop-filter: blur(16px) saturate(180%);       
+    width: 350px;
+    height: 240px;   
+    padding: 25px;    
+    border-radius: 10px;    
+    border: solid ;
+    border-color: #ff86ff;
+    box-shadow: 0 0 5px  #ff86ff,
+                0 0 15px #ff86ff,
+                0 0 25px #ff86ff;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+.buttons:hover{
+    color: black;
+    background-color: #03e9f4;
+    box-shadow: 0 0 5px  #03e9f4,
+                0 0 15px #03e9f4,
+                0 0 30px #03e9f4;
+                
+}
+
+.btnContainer{        
+    display: grid; 
+    justify-content: center;
+    grid-gap: 10px;
+}
+.resetLap{    
+    display: flex;        
+    gap: 10px;
+}
+.startStop>.buttons{
+    min-width: 300px;    
+}
+
+.Timer{
+    color: #03e9f4;
+    text-shadow: 0 0 6.5px #03e9f4;
+    font-size: 50px;
+    font-weight: 500;
+    padding-top: 20px;   
+    padding-bottom: 30px;    
+}
+
+@media screen and (max-width: 750px) {
+    .all{
+        margin-top: 0;
+        transform: translateY(0%);
+        width: 270px;
+        min-height: 250px;
+        padding: 20px;
+    }
+    .Timer{
+        font-size: 38px;
+        padding-top: 5px;   
+        padding-bottom: 15px;  
+    }
+    .buttons{
+        min-width: 250px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: 550;
+    }
+    .startStop>.buttons{
+        min-width: 250px;    
+    }
+    .resetLap{    
+        display: grid;        
+        row-gap: 10px;
+    }
+}
